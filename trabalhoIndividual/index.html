@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homem de Ferro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body class=" text-white">
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark bg-opacity-75 shadow">
+      
+      <!-- Botão para abrir o modal -->
+      
+
+      <!-- Logo e Menu -->
+      <div class="container-fluid ">
+        <a href="#" class="navbar navbar-expand-lg navbar-brand"><img src="img/reatorARC2.png" alt="Iron Man" width="40" height="40" class="rounded-circle" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHamburguer"
+          aria-controls="menuHamburguer" aria-expanded="false" aria-label="Toggler navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse " id="menuHamburguer">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#inicio">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
+            <li class="nav-item"><a class="nav-link" href="#elenco">Elenco</a></li> 
+            <li class="nav-item"><a class="nav-link" href="#galeria">Armaduras</a></li>
+
+            
+          </ul>
+            <div class="ms-lg-auto mt-2 mt-lg-0 d-flex justify-content-lg-end justify-content-center align-items-center w-100 w-lg-auto">
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalMusica">
+                Ouça a Trilha Sonora
+              </button>
+            </div>
+        </div>
+        
+      </div>
+    </nav>
+    
+  </header>
+
+
+
+  <!-- Conteúdo Principal -->
+  <main class="container mt-5 pt-5">
+    <div class="position-fixed top-0 start-0 w-100 h-100 overflow-hidden z-n1">
+      <div class="video-background ratio ratio-16x9 w-125 h-125">
+        <iframe 
+          src="https://www.youtube.com/embed/Xh0KeF5DD14?start=64&end=95&autoplay=1&mute=1&controls=0&loop=1&playlist=Xh0KeF5DD14"
+          title="YouTube video background"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          class="border-0">
+        </iframe>
+      </div>
+    </div>
+
+
+    <!-- Seção Início -->
+    <section id="inicio" class="text-center my-5">
+      <h1 class="display-4">Homem de Ferro</h1>
+      <p class="lead">"Eu sou o Homem de Ferro." — Tony Stark</p>
+      <img src="img/tonyStark.webp" class="img-fluid rounded" alt="Homem de Ferro" />
+    </section>
+
+    <!-- Seção História -->
+    <section id="historia" class="text-center mb-4 my-5">
+      <h2>História</h2>
+      <p>
+        Tony Stark é um industrial bilionário e inventor brilhante que realiza testes bélicos no exterior, mas é sequestrado por terroristas que o forçam a construir uma arma devastadora. Em vez disso, ele constrói uma armadura blindada e enfrenta seus sequestradores. Quando volta aos Estados Unidos, Stark aprimora a armadura e a utiliza para combater o crime.
+      </p>
+    </section>
+
+   <!-- Seção Elenco -->
+  <section class="container mt-5" id="elenco">
+    <h2 class="text-center mb-4 text-white">Elenco e Personagens</h2>
+    <div class="row g-4">
+      
+      <!-- Robert Downey Jr. -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="img/rdj.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Robert Downey Jr.">
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="card-text">Robert Downey Jr.</p>
+              <button class="btn btn-link text-white p-0" data-bs-toggle="modal" data-bs-target="#modalTony">
+                Tony Stark / Homem de Ferro
+              </button>
+            </h5>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Gwyneth Paltrow -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="img/gwyneth.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Gwyneth Paltrow">
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="card-text"> Gwyneth Paltrow</p>
+              <button class="btn btn-link text-white p-0" data-bs-toggle="modal" data-bs-target="#modalPepper">
+                Pepper Potts
+              </button>
+            </h5>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- James Rhodes -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100" id="card-rhodey">
+          <img src="img/terrence.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Terrence Howard" id="img-rhodey">
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="card-text" >Terrence Howard</p>
+
+              <button class="btn btn-link text-white p-0" data-bs-toggle="modal" data-bs-target="#modalRhodey">
+                James Rhodes - "Rhodey"
+              </button>
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jeff Bridges -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="img/jeff.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Jeff Bridges">
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="card-text"> Jeff Bridges</p>
+              <button class="btn btn-link text-white p-0" data-bs-toggle="modal" data-bs-target="#modalObadiah">
+                Obadiah Stane
+              </button>
+            </h5>
+          </div>
+        </div>
+      </div>
+
+        <!--Stan Lee-->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="img/stan.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Stan Lee">
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="card-text">Stan Lee</p>
+              <button class="btn btn-link text-white p-0" data-bs-toggle="modal"  data-bs-target="#modalStanLee">
+                Participação Especial
+              </button>
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!--Jon Favreu-->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="img/jonFavreu.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="Jon Favreau">
+          <div class="card-body">
+            <h5 class="card-title">
+              <p class="card-text">Jon Favreau</p>
+              <button class="btn btn-link text-white p-0" data-bs-toggle="modal" data-bs-target="#modalHappy">
+                Happy Hogan
+              </button>
+            </h5>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+  </section>
+  
+
+  <!-- Tony Stark -->
+  <div class="modal fade" id="modalTony" tabindex="-1" aria-labelledby="modalTonyLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTonyLabel">Tony Stark / Homem de Ferro</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Gênio bilionário, playboy e filantropo. Criador da armadura do Homem de Ferro e fundador dos Vingadores.
+          <img src="img/tony.jpg" class="img-fluid mt-2 rounded" alt="Pepper Potts">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pepper Potts -->
+  <div class="modal fade" id="modalPepper" tabindex="-1" aria-labelledby="modalPepperLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPepperLabel">Pepper Potts</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Assistente pessoal e interesse romântico de Tony Stark. Eventualmente se torna CEO da Stark Industries.
+          <img src="img/pepper.webp" class="img-fluid mt-2 rounded" alt="Pepper Potts">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rhodey -->
+  <div class="modal fade" id="modalRhodey" tabindex="-1" aria-labelledby="modalRhodeyLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRhodeyLabel">James "Rhodey" Rhodes</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Amigo de longa data de Tony Stark e piloto de testes. Eventualmente assume o manto do Máquina de Combate.
+          <img src="img/rhodey.jpg" class="img-fluid mt-2 rounded" alt="James Rhodes">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Obadiah -->
+  <div class="modal fade" id="modalObadiah" tabindex="-1" aria-labelledby="modalObadiahLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalObadiahLabel">Obadiah Stane</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Mentor de Tony Stark e CEO da Stark Industries. Torna-se o vilão principal no primeiro filme.
+          <img src="img/obadiah.jpg" class="img-fluid mt-2 rounded" alt="Obadiah Stane">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stan Lee-->
+  <div class="modal fade" id="modalStanLee" tabindex="-1" aria-labelledby="modalStanLeeLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalStanLeeLabel">Stan Lee</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Criador do Homem de Ferro e co-criador de muitos outros personagens da Marvel. Sua participação especial é um tributo ao seu legado.
+          <img src="img/stanCameo.jpg" class="img-fluid mt-2 rounded" alt="Stan Lee">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Happy Hogan -->
+  <div class="modal fade" id="modalHappy" tabindex="-1" aria-labelledby="modalHappyLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalHappyLabel">Happy Hogan</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Chefe de segurança de Tony Stark e amigo próximo. Ele desempenha um papel importante na proteção de Stark e no desenvolvimento do Homem de Ferro.
+          <img src="img/happyH.webp" class="img-fluid mt-2 rounded" alt="Happy Hogan">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+
+
+
+
+    <!-- Seção Galeria de Armaduras -->
+    <main class="container mt-5 pt-5" id="galeria">
+      <h2 class="text-center mb-4">Galeria de Armaduras</h2>
+
+      <div id="carouselArmaduras" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                  <img src="img/mark1.png" class="d-block w-1 mx-auto rounded shadow" alt="Armadura Mark 1">
+                  <div class="carousel-caption bg-dark bg-opacity-50 rounded ">
+                      <h5>Armadura Mark I</h5>
+                      <p>Primeira armadura criada por Tony Stark, ainda na caverna.</p>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <img src="img/mark2.png" class="img-fluid d-block w-10 mx-auto rounded shadow" alt="Armadura Mark 2">
+                  <div class="carousel-caption bg-dark bg-opacity-50 rounded ">
+                      <h5>Armadura Mark II</h5>
+                      <p>Segunda armadura, prototipo da versão mas conhecida mas com tonalidade prateada</p>
+                  </div>
+              </div>
+
+              <div class="carousel-item">
+                  <img src="img/mark3.png" class="img-fluid d-block w-10 mx-auto rounded shadow" alt="Armadura Mark 3">
+                  <div class="carousel-caption bg-dark bg-opacity-50 rounded ">
+                      <h5>Armadura Mark III</h5>
+                      <p>Primeira versão vermelha e dourada, com capacidade de voo completo.</p>
+                  </div>
+              </div>
+              
+              <div class="carousel-item">
+                  <img src="img/mark4.png" class="img-fluid d-block w-10 mx-auto rounded shadow" alt="Armadura Mark 4">
+                  <div class="carousel-caption bg-dark bg-opacity-50 rounded ">
+                      <h5>Armadura Mark IV</h5>
+                      <p>Armadura com melhorias e resistencia ao frio em altitudes extremas.</p>
+                  </div>
+              </div>
+              
+
+              
+
+          </div>
+
+          <!-- Controles -->
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselArmaduras" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next " type="button " data-bs-target="#carouselArmaduras" data-bs-slide="next">
+              <span class="carousel-control-next-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+          </button>
+
+          <!--<button class="position-absolute top-50 start-0 translate-middle-y btn btn-light rounded-circle me-2" type="button" data-bs-target="#carouselArmaduras" data-bs-slide="prev">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="position-absolute top-50 end-0 translate-middle-y btn btn-light rounded-circle ms-2" type="button" data-bs-target="#carouselArmaduras" data-bs-slide="next">
+            <i class="bi bi-chevron-right"></i>
+          </button>-->
+
+          <!-- Indicadores -->
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselArmaduras" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselArmaduras" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselArmaduras" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselArmaduras" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+      </div>
+    </main>
+
+
+    <!-- Modal -->
+  <div class="modal fade" id="modalMusica" tabindex="-1" aria-labelledby="modalMusicaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalMusicaLabel">Trilha Sonora</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+
+          <!-- Menu das Abas -->
+          <ul class="nav nav-tabs mb-3" id="musicaTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="backinblack-tab" data-bs-toggle="tab" data-bs-target="#backinblack" type="button" role="tab">
+                Back in Black
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="ironman-tab" data-bs-toggle="tab" data-bs-target="#ironman" type="button" role="tab">
+                Iron Man
+              </button>
+            </li>
+          </ul>
+
+          <!-- Músicas das Abas -->
+          <div class="tab-content" id="musicaTabContent">
+            <div class="tab-pane fade show active" id="backinblack" role="tabpanel">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://youtube.com/embed/rrim6_9VSeM?si=oSvv15X0DWqVQ-qY" title="Back in Black - AC/DC" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="ironman" role="tabpanel">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://youtube.com/embed/b3-QqGVt-tM?si=MMO7nt52GQ8d4Yqt" title="Iron Man - Black Sabbath" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <footer class="text-center mt-5 ">
+    <p class="text-white ">&copy; Eduardo Eurico</p>
+  </footer>
+
+  
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+  <script>
+    // Popover
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl);
+    });
+    //Timer Terrence Howard → Don Cheadle
+    setTimeout(() => {
+      const img = document.getElementById("img-rhodey");
+      const text = document.querySelector("#card-rhodey .card-text");
+      img.src = "img/don.jpg";
+      img.alt = "Don Cheadle";
+      text.textContent = "Don Cheadle";
+    }, 7000); // 3000 milissegundos = 3 segundos
+
+    
+  </script>
+</body>
+</html>

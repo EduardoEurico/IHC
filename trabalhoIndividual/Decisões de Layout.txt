@@ -1,0 +1,20 @@
+Decisões de Layout
+
+No layout do login, inseri um vídeo curto e defini um loop para ele ser executado infinitamente e a partir de algumas classes preenchi ele completamente na tela de tal forma que as laterais do vídeo não aparecem e defini uma classe para ele não sobrepujar outros elementos. No formulário criei uma box shadow para ficar transparente com bordas redondas e as caixas de textos bem espaçadas, com um botão logo abaixo que vai redirecionar para a página principal.
+
+Na página principal usei um vídeo do youtube como background e botei ele em loop e mutado parecido com o estilo usado no site "https://tbhx.net/en/character/?chara=x" no qual me inspirei, para não aparecer as laterais, aumentei o tamanho do vídeo e o centralizei para o conteúdo de fundo seja o que desejei no vídeo. Na navbar botei uma logo do reatorARC do homem de ferro na lateral esquerda, os botões de navegação no meio e por fim na direita da navbar botei o botão de trilhas sonoras,no qual eu recomendo botar para rodar back in black enquanto olha o restante do site, neste botão peguei algumas musicas conhecidas e famosas que tocaram nos filmes 1 e 2 de homem de ferro, organizei elas em um modal com abas no qual o usuário pode escolher a musica que vai tocar na pagina. 
+
+Decisões de Layout
+
+Adotei um modelo de estrutura multipage com as páginas login.html e index.html. No login.html a div externa possui as classes position-relative w-100 vh-100 overflow-hidden, garantindo que ela ocupe 100% da largura e 100% da altura da janela , escondendo qualquer conteúdo que ultrapasse seus limites.Dentro da <div>, inseri a tag <video> com os atributos "autoplay", "muted" e "loop" para que o vídeo seja reproduzido automaticamente, sem som, e de forma contínua. A classe position-absolute w-100 h-100 object-fit-cover faz com que o vídeo fique ocupando toda a largura e altura da <div>. A classe object-fit-cover faz com que o vídeo cubra completamente a área disponível sem distorcer, cortando o excesso se necessário para manter a proporção original. Utilizei a estrutura de layout do Bootstrap para centralizar o formulário de login sobre o vídeo de fundo. Usei uma <div> com as classes position-relative z-1 d-flex justify-content-center align-items-center h-100 text-white, que garante que o conteúdo fique por cima do vídeo , centralizado , ocupando a altura da tela, com o texto em branco. O formulário está envolvido por uma <div class="col-md-6 col-lg-4 bg-dark bg-opacity-75 p-4 rounded-4 shadow">, que define uma largura responsiva, aplica um fundo escuro semitransparente, adiciona espaçamento interno entre as bordas, cantos arredondados e uma leve sombra para dar destaque e profundidade ao bloco.
+
+
+
+O layout foi estruturado com base no sistema de grid responsivo do Bootstrap (container > row > col). Em algumas escolhas visuais me inspirei no site "https://tbhx.net/en/character/?chara=x" , onde existe um vídeo curto de fundo na pagina apresentando o personagem, e implementei isso usando video-background do bootsrtrap como plano de fundo, overflow-hidden para esconder as laterais do vídeo e focar apenas na parte central e "z-n1" para ter certeza que ele vai estar uma camada atrás do conteúdo principal do body. 
+
+
+Dentro dessa div, adicionei uma <div class="container"> seguida por uma <div class="row justify-content-center"> e uma coluna centralizada (col-md-6 col-lg-4). A coluna recebeu o fundo escuro com opacidade (bg-dark bg-opacity-75), cantos arredondados (rounded-4), sombra (shadow) e espaçamento interno (p-4) para destacar o formulário sobre o fundo em vídeo.
+
+O formulário inclui campos de entrada para "Usuário" e "Senha", ambos com a classe form-control para garantir estilo consistente. Ao final, o botão "Entrar" ocupa toda a largura disponível (w-100) e está estilizado com btn btn-primary.
+
+O formulário está configurado com action="../trabalhoIndividual/index.html", redirecionando para a página principal (index.html) após o envio.
